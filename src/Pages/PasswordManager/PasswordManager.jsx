@@ -24,7 +24,8 @@ const PasswordManager = ({ passwords }) => {
       {passwords.map((item) => (
         <div className='item_container'>
           <div className='text_box'>
-            Title: {item.title}, Password:{item.password}
+            Title: {item.title} | username: {item.user_name} | Password:
+            {item.password}
           </div>
           <button
             onClick={() => copyToClipboard(item.password)}
@@ -42,7 +43,13 @@ const PasswordManager = ({ passwords }) => {
 }
 
 PasswordManager.defaultProps = {
-  passwords: [{ password: 'Target@100k$#@!', title: 'Saffron Gmail' }],
+  passwords: [
+    {
+      password: 'Target@100k$#@!',
+      user_name: 'info@saffronchariot.com',
+      title: 'Saffron Gmail',
+    },
+  ],
 }
 
 export default PasswordManager

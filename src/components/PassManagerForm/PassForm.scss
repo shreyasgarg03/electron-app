@@ -9,9 +9,10 @@
 
   .input {
     font-family: $primary-font;
-    padding: 8px 30px;
+    padding: 8px 26px;
     background-color: lighten($primary-clr, 5%);
     border: 2px solid $gradient-clr1;
+    color: white;
   }
   .input_title {
     margin-right: 10px;
